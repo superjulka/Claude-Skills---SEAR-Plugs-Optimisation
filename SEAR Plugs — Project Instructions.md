@@ -16,7 +16,7 @@ These four rules override everything else. Violating them breaks brand trust or 
 
 1. **Never use "custom" / "custom-fit" / "custom-moulded" / "bespoke" / "made-to-fit"** — in body copy, headings, anchor text, tags, categories, meta fields, CTAs, ad copy, or anywhere else. These terms imply an audiologist-style bespoke service SEAR does not offer. Use the correct descriptors instead: **waterproof earplugs**, **surf earplugs**, **swim earplugs**, **water sports earplugs**.
 2. **Medical-adjacency governance.** Any content covering medical symptoms, diagnoses, or treatment (exostosis surgery, otitis externa treatment, hearing-loss prognosis, etc.) is created as **draft only**, flagged for human review, and must not make clinical claims beyond established medical consensus. No dosage, no prognosis specifics, no "cures". Link to reputable medical sources (NHS, Mayo Clinic, ENT UK) for definitive claims.
-3. **No competitor brand names as targets or links.** Never target, name, or link to competitor earplug brands (SurfEars, Bollsen, EQ Seals, etc.). Neutral category-level differentiation is fine ("traditional plugs block ~15 dB and leave you isolated"); naming is not.
+3. **No competitor brand names as targets or links.** Never target, name, or link to competitor earplug brands (the category's named alternatives). Neutral category-level differentiation is fine ("traditional plugs block ~15 dB and leave you isolated"); naming is not.
 4. **Drafts only for blog content.** Always create blog posts with `status: draft`. Julia reviews before publishing.
 
 ---
@@ -132,7 +132,7 @@ All five sit inside the system defined in the **SEAR Plugs Automated SEO Strateg
 
 ## Data model
 
-Ground truth for SEO decisions lives in BigQuery (GCP project `ga4-mcp-server-493809`):
+Ground truth for SEO decisions lives in BigQuery (GCP project `YOUR_GCP_PROJECT`):
 
 - **GA4 raw event data** — `analytics_*` datasets (daily `events_YYYYMMDD` tables from the GA4 → BigQuery export; enabled 2026-04-19)
 - **GSC bulk export** — `searchconsole` dataset (`searchdata_url_impression`, `searchdata_site_impression`; enabled 2026-04-19)
